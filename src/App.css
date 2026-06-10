@@ -239,52 +239,67 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
+/* This is the core change: swapping black with the new Green */
 .match-card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
+  background-color: #025716; /* Your specific deep Green background */
+  border: 2px solid #013a0e; /* A slightly darker green border for definition */
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Floating effect for cards */
 }
 
+/* Slight lift and glow on hover to make it feel premium and interactive */
+.match-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(2, 87, 22, 0.5); /* A vibrant green glow */
+}
+
+/* Update the small 'Match 73' header color - changing from grey to beige for readability on green */
 .match-header {
   font-size: 0.85rem;
-  color: #888;
+  color: #d4d4b2; /* Muted beige - easy to read but doesn't compete with team names */
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+/* The dark grey backgrounds within the card - need to stay dark but relate to the new green */
 .team-row {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
   padding: 0.5rem;
-  background: #2a2a2a;
+  background: #013a0e; /* Darker green, not grey, to create internal logic with the card */
   border-radius: 4px;
 }
 
+/* Update the seed badge (like 2A or 2B) colors for readability on the dark internal green */
 .seed-badge {
-  background: #444;
-  color: #fff;
+  background: #025716; /* Same vibrant green as the card, but on the darker internal row it will pop */
+  color: #f5f5dc; /* Beige text */
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
   font-size: 0.8rem;
   font-weight: bold;
 }
 
+/* Update the actual team names - need bright text on the green background */
 .team-name {
+  color: #ffffff; /* Bright white for primary information */
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
+/* Update the small 'vs' divider color for readability on green */
 .vs-divider {
   margin: 0.5rem 0;
   font-size: 0.8rem;
-  color: #666;
+  color: #f5f5dc; /* Clear beige */
 }
 
 /* --- TABLE AESTHETICS (The Inversion) --- */
@@ -372,4 +387,23 @@ td:last-child strong {
 .badge-fail {
   background-color: #cccccc; /* Muted grey for eliminated */
   color: #666666;
+}
+
+/* --- KNOCKOUT BRACKET AESTHETICS (The Green Overhaul) --- */
+
+/* The outer container - adding some spacing and a border for visual separation */
+.knockout-container {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f5f5dc; /* Beige container background for clear contrast against the main body red */
+  border-radius: 12px;
+  border: 4px solid #d4d4b2; /* Subtle beige border for depth */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); /* Heavy floating shadow effect */
+}
+
+/* Update the main knockout heading 'Round of 32 Matchups' color */
+.knockout-container h2 {
+  color: #780c0e; /* Use the main tournament Red for the heading to tie it into the overall theme */
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
