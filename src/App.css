@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Michroma&display=swap');
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -183,6 +185,56 @@
   }
 }
 
+body {
+  background-color: #780c0e; /* The deep red background */
+  color: #F5F5DC; /* Default global text to Beige for visibility */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bruno Ace SC', sans-serif;
+  color: #F5F5DC; /* Beige */
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* 2. The Group Headings (Group A, Group B, etc.) */
+h2 {
+  font-family: 'Michroma', sans-serif;
+  color: #F5F5DC; /* Beige */
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+}
+
+.app-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+button {
+  font-family: 'Elms Sans', sans-serif;
+  font-size: 1.3rem;
+  background-color: #F5F5DC; /* Beige button */
+  color: #780c0e; /* Red text */
+  border: 2px solid #4a0708; /* Darker red border for depth */
+  border-radius: 4px;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #ffffff; /* Brighten on hover */
+  box-shadow: 0 0 12px rgba(245, 245, 220, 0.4); /* Subtle beige glow */
+}
+
 .bracket-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -233,4 +285,91 @@
   margin: 0.5rem 0;
   font-size: 0.8rem;
   color: #666;
+}
+
+/* --- TABLE AESTHETICS (The Inversion) --- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #F5F5DC; /* Beige table background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Heavy shadow to pop off the red */
+  margin-bottom: 2rem;
+  color: #000000; /* Black text for content readability */
+  font-family: 'Quantico', sans-serif; /* Quantico for all table content */
+}
+
+/* Header Row Styling */
+th {
+  background-color: #e6e6c8; /* Slightly darker beige for the header row */
+  color: #333333;
+  font-weight: 600;
+  text-transform: uppercase;
+  /*font-size: 0.75rem;  Michroma is a very wide font, dropping size slightly */
+  letter-spacing: 1px;
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 2px solid #d4d4b2;
+}
+
+/* Standard Cell Styling */
+td {
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #e8e8d3; /* Very subtle row divider */
+}
+
+/* Hover Effect for Rows */
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #ffffff; /* Flash white when hovering over a team */
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Specific Column Alignments */
+th:nth-child(2),
+td.team-name-cell {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* The Team Names */
+.team-name-cell strong {
+  color: #000000;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* The Points (PTS) Column - Swapping from Green to Red */
+td:last-child strong {
+  color: #780c0e; /* Tournament Red to match the background */
+  font-size: 1.15rem;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Michroma', sans-serif; /* Giving the badges a sci-fi look */
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.badge-pass {
+  background-color: #780c0e; /* Red badge */
+  color: #F5F5DC; /* Beige text */
+}
+
+.badge-fail {
+  background-color: #cccccc; /* Muted grey for eliminated */
+  color: #666666;
 }

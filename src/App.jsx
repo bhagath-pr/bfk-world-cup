@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="app-wrapper">
     <header>
-    <h1>World Cup Esports Tournament</h1>
+    <h1>BFK World Cup 2026</h1>
     <div className="header-controls">
     <button
     className="view-toggle-btn"
