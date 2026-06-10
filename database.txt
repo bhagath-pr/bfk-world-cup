@@ -1,0 +1,85 @@
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Czechia', 'Akhilesh', 'A'),
+('Mexico', 'Sanath', 'A'),
+('South Korea', 'Aswin Joseph', 'A'),
+('South Africa', 'Jovin', 'A');
+
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Bosnia and Herzegovina', 'Roshan', 'B'),
+('Canada', 'Rashid', 'B'),
+('Qatar', 'Shahabas', 'B'),
+('Switzerland', 'Sanu', 'B');
+
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Bosnia and Herzegovina', 'Roshan', 'B'),
+('Canada', 'Rashid', 'B'),
+('Qatar', 'Shahabas', 'B'),
+('Switzerland', 'Sanu', 'B');
+
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Brazil', 'Gokul', 'C'),
+('Haiti', 'Shaheem', 'C'),
+('Morocco', 'Adharsh', 'C'),
+('Scotland', 'Jamshid', 'C');
+
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Australia', 'Adwaith', 'D'),
+('Paraguay', 'Nasir', 'D'),
+('Türkiye', 'Dhanish', 'D'),
+('USA', 'Raeez', 'D');
+
+-- Group E
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Curacao', 'Neeraj', 'E'),
+('Germany', 'Cherish', 'E'),
+('Ivory Coast', 'Musthafa', 'E'),
+('Ecuador', 'Soonu', 'E');
+
+-- Group F
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Japan', 'Oliver', 'F'),
+('Netherlands', 'Bilal', 'F'),
+('Sweden', 'Akash', 'F'),
+('Tunisia', 'Naveen Krishna', 'F');
+
+-- Group G
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Belgium', 'Sreeraj', 'G'),
+('Egypt', 'Athul', 'G'),
+('Iran', 'Sabim f3', 'G'),
+('New Zealand', 'Vyshakh', 'G');
+
+-- Group H
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Cape Verde', 'Alby James', 'H'),
+('Saudi Arabia', 'Sabir f3', 'H'),
+('Spain', 'Shimin', 'H'),
+('Uruguay', 'Sabareesh', 'H');
+
+-- Group I
+INSERT INTO teams (name, player_name, group_id) VALUES
+('France', 'Melbin', 'I'),
+('Iraq', 'Shuhaib', 'I'),
+('Norway', 'Abhi', 'I'),
+('Senegal', 'Bhagath', 'I');
+
+-- Group J
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Algeria', 'Paachu', 'J'),
+('Argentina', 'Abhijith', 'J'),
+('Austria', 'Shimin', 'J'),
+('Jordan', 'Naveen', 'J');
+
+-- Group K
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Colombia', 'Haneen', 'K'),
+('DR Congo', 'asif', 'K'),
+('Portugal', 'Chethan Raj', 'K'),
+('Uzbekistan', 'Jagath', 'K');
+
+-- Group L
+INSERT INTO teams (name, player_name, group_id) VALUES
+('Croatia', 'Lijeesh', 'L'),
+('England', 'Amal T', 'L'),
+('Ghana', 'Vyshakh', 'L'),
+('Panama', 'asif', 'L');
