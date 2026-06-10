@@ -49,7 +49,7 @@ export default function GroupStandings() {
             <thead>
               <tr>
                 <th>Pos</th>
-                <th>Team / Player</th>
+                <th>Team</th>
                 <th>MP</th>
                 <th>W</th>
                 <th>D</th>
@@ -61,23 +61,22 @@ export default function GroupStandings() {
               </tr>
             </thead>
             <tbody>
-              {groups[groupId].map((team, index) => (
-                <tr key={team.team_id}>
-                  <td>{index + 1}</td>
-                  <td>
-                    <strong>{team.team_name}</strong> 
-                    <span className="player-tag">({team.player_name})</span>
-                  </td>
-                  <td>{team.mp}</td>
-                  <td>{team.w}</td>
-                  <td>{team.d}</td>
-                  <td>{team.l}</td>
-                  <td>{team.gd > 0 ? `+${team.gd}` : team.gd}</td>
-                  <td>{team.gf}</td>
-                  <td>{team.fpp}</td>
-                  <td><strong>{team.pts}</strong></td>
-                </tr>
-              ))}
+            {groups[groupId].map((team, index) => (
+              <tr key={team.team_id}>
+              <td>{index + 1}</td>
+              <td className="team-name-cell">
+              <strong>{team.team_name}</strong>
+              </td>
+              <td>{team.mp}</td>
+              <td>{team.w}</td>
+              <td>{team.d}</td>
+              <td>{team.l}</td>
+              <td>{team.gd > 0 ? `+${team.gd}` : team.gd}</td>
+              <td>{team.gf}</td>
+              <td>{team.fpp}</td>
+              <td><strong>{team.pts}</strong></td>
+              </tr>
+            ))}
             </tbody>
           </table>
         </div>

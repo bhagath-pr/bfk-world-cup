@@ -40,7 +40,7 @@ export default function WildcardStandings() {
         <tr>
         <th>Rank</th>
         <th>Group</th>
-        <th>Team / Player</th>
+        <th>Team</th>
         <th>MP</th>
         <th>W</th>
         <th>GD</th>
@@ -69,9 +69,8 @@ export default function WildcardStandings() {
                 <tr className={isAdvancing ? 'row-advancing' : 'row-eliminated'}>
                 <td><strong>{overallRank}</strong></td>
                 <td>Group {team.group_id}</td>
-                <td>
+                <td className="team-name-cell">
                 <strong>{team.team_name}</strong>
-                <span className="player-tag"> ({team.player_name})</span>
                 </td>
                 <td>{team.mp}</td>
                 <td>{team.w}</td>
