@@ -49,6 +49,9 @@ export default function KnockoutBracket() {
                 });
 
                 // 4. Generate the Wildcard Matches using the Annex C matrix
+                console.log("--- WILDCARD DEBUGGER ---");
+                console.log("Top 8 Teams Array:", top8Wildcards);
+                console.log("Generated Key string:", top8Wildcards.map(t => t.group_id).sort().join(''));
                 const dynamicMatches = generateWildcardMatches(top8Wildcards);
 
                 // If the matrix returned empty (meaning exactly 8 teams haven't qualified yet), we just show placeholders

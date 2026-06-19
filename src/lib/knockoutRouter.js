@@ -30,6 +30,10 @@ const ANNEX_C_MATRIX = {
         "1E": "3A", "1I": "3B", "1A": "3C", "1L": "3D",
         "1G": "3E", "1D": "3F", "1B": "3G", "1K": "3I"
     },
+    "CDFGHIKL": {
+        "1E": "3G", "1I": "3K", "1A": "3C", "1L": "3I",
+        "1D": "3F", "1G": "3H", "1B": "3D", "1K": "3L"
+    }
     // ... 493 more combinations
 };
 
